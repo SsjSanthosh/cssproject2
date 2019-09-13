@@ -1,0 +1,515 @@
+html {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+  @media only screen and (max-width: 1100px) {
+    html {
+      font-size: 50%; } }
+
+body {
+  font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6rem;
+  background-image: linear-gradient(to bottom right, #eb2f64, #ba265d);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #777; }
+
+.container {
+  max-width: 1400px;
+  margin: 5% auto;
+  background-color: #f4f2f2;
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7); }
+  @media only screen and (max-width: 1400px) {
+    .container {
+      margin: 0;
+      max-width: 100vw; } }
+
+.header {
+  height: 10%;
+  background-color: white; }
+
+.content {
+  display: flex; }
+  @media only screen and (max-width: 1000px) {
+    .content {
+      flex-direction: column; } }
+  .content .sidebar {
+    background-color: #333;
+    flex: 0 0 16%; }
+    @media only screen and (max-width: 1000px) {
+      .content .sidebar {
+        display: flex;
+        padding: 0;
+        margin: 0; } }
+  .content .hotel-view {
+    background-color: #f4f2f2;
+    flex: 1; }
+
+.details {
+  display: flex;
+  padding: 5rem;
+  background-color: #faf9f9; }
+  @media only screen and (max-width: 750px) {
+    .details {
+      padding-right: 5rem;
+      padding-left: 1rem; } }
+  @media only screen and (max-width: 750px) {
+    .details {
+      flex-direction: column;
+      padding: 5%; } }
+
+.description {
+  flex: 0 0 60%;
+  margin-right: 4rem;
+  background: #fff;
+  box-shadow: 0 0.6rem 1rem rgba(0, 0, 0, 0.4);
+  padding: 2rem; }
+
+.user-reviews {
+  flex: 0 0 35%; }
+
+.cta {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.u-plain-li {
+  list-style: none; }
+
+.u-plain-anchor a {
+  text-decoration: none;
+  color: white; }
+
+.u-text-center {
+  text-align: center; }
+
+.header {
+  font-size: 1.4rem;
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+  align-items: center; }
+  @media only screen and (max-width: 600px) {
+    .header {
+      flex-wrap: wrap;
+      height: 18rem;
+      justify-content: space-between; } }
+  .header .header-logo-div {
+    flex: 0 0 10%; }
+    .header .header-logo-div .header-logo {
+      height: 6rem;
+      margin-left: 3rem; }
+      @media only screen and (max-width: 600px) {
+        .header .header-logo-div .header-logo {
+          height: 4rem; } }
+  .header-search-div {
+    flex: 0 0 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media only screen and (max-width: 600px) {
+      .header-search-div {
+        order: 11; } }
+    .header-search-div .header-search {
+      width: 80%;
+      height: 2rem;
+      font-family: inherit;
+      padding: 0.9rem 2rem;
+      color: inherit;
+      border-radius: 20px;
+      border: 0;
+      background-color: #f4f2f2;
+      transition: all 0.4s;
+      margin-right: -10%;
+      font-size: 1.5rem; }
+      @media only screen and (max-width: 600px) {
+        .header-search-div .header-search {
+          width: 70vw; } }
+      @media only screen and (max-width: 600px) {
+        .header-search-div .header-search {
+          margin-right: -5rem; } }
+      .header-search-div .header-search:focus {
+        outline: 0;
+        border: 1px solid #eb2f64;
+        width: 90%; }
+        @media only screen and (max-width: 600px) {
+          .header-search-div .header-search:focus {
+            width: 80vw; } }
+      .header-search-div .header-search:-webkit-input-placeholder {
+        color: #f0eeee; }
+    .header-search-div .search-btn {
+      border: 0;
+      transform: translateY(0.15rem);
+      background-color: #f4f2f2;
+      padding: 0rem; }
+      .header-search-div .search-btn:focus {
+        outline: none; }
+      .header-search-div .search-btn .search-icon {
+        height: 1.8rem;
+        width: 1.8rem; }
+  .header-user-nav {
+    margin-right: 3rem;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header-user-nav > * {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 3rem;
+      cursor: pointer;
+      height: 100%; }
+      .header-user-nav > *:hover {
+        background-color: #f4f2f2; }
+    .header-user-nav .user-nav-icon-box {
+      position: relative; }
+      .header-user-nav .user-nav-icon-box .user-icon {
+        height: 3rem;
+        width: 3rem; }
+      .header-user-nav .user-nav-icon-box .user-nav-notif {
+        position: absolute;
+        font-size: 0.8rem;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        background-color: #eb2f64;
+        color: white;
+        text-align: center;
+        top: 20%;
+        right: 2rem; }
+  .header .user-nav-user .user-dp {
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%; }
+
+.content {
+  height: 100%; }
+  .content .sidebar {
+    padding: 0rem 0rem;
+    font-size: 1.3rem;
+    color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .content .side-nav {
+    margin: 0;
+    padding: 0;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 3rem; }
+    @media only screen and (max-width: 1000px) {
+      .content .side-nav {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        justify-content: space-evenly; } }
+    .content .side-nav-li {
+      padding: 1rem;
+      padding-left: 2.7rem;
+      transition: all 0.3s;
+      border-left: 2px solid #eb2f64;
+      margin-top: 2rem; }
+      @media only screen and (max-width: 1000px) {
+        .content .side-nav-li {
+          flex: 0 1 25%;
+          margin: 0;
+          border: 0;
+          padding: 1rem 1rem; } }
+      @media only screen and (max-width: 600px) {
+        .content .side-nav-li {
+          padding: 1rem;
+          font-size: 1rem;
+          flex: 0 1 23%; } }
+      @media only screen and (max-width: 600px) {
+        .content .side-nav-li {
+          padding: 0.4rem;
+          font-size: 1rem;
+          flex: 0 1 25%; } }
+      .content .side-nav-li:hover, .content .side-nav-li-active {
+        background-color: #eb2f64;
+        color: #f0eeee; }
+    .content .side-nav-link {
+      display: flex;
+      align-items: center; }
+    .content .side-nav-icon {
+      order: -1;
+      height: 3rem;
+      width: 3rem;
+      margin-right: 4rem;
+      fill: currentColor; }
+      @media only screen and (max-width: 600px) {
+        .content .side-nav-icon {
+          height: 2rem;
+          width: 2rem;
+          margin-right: 2rem; } }
+  @media only screen and (max-width: 1000px) {
+    .content .legal {
+      display: none; } }
+
+.hotel-overview {
+  background-color: white; }
+  .hotel-overview .hotel-images {
+    display: flex;
+    margin: 0;
+    padding: 0; }
+  .hotel-overview .hotel-img {
+    width: 100%; }
+  .hotel-overview .hotel-stars-flex {
+    display: flex-inline; }
+    .hotel-overview .hotel-stars-flex .hotel-stars {
+      width: 2.5rem;
+      height: 2.5rem;
+      fill: #eb2f64; }
+      @media only screen and (max-width: 700px) {
+        .hotel-overview .hotel-stars-flex .hotel-stars {
+          width: 1rem;
+          height: 1rem; } }
+  .hotel-overview .hotel-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -0.5rem;
+    justify-content: space-between; }
+    @media only screen and (max-width: 500px) {
+      .hotel-overview .hotel-info {
+        height: 15rem;
+        flex-direction: column;
+        align-items: center; } }
+    .hotel-overview .hotel-info .hotel-info-left {
+      flex: 0 0 50%;
+      display: flex;
+      padding: 2rem;
+      align-items: center; }
+      @media only screen and (max-width: 700px) {
+        .hotel-overview .hotel-info .hotel-info-left {
+          padding: 0;
+          margin: 0; } }
+      .hotel-overview .hotel-info .hotel-info-left .hotel-title {
+        color: #777;
+        font-size: 3rem;
+        margin-right: 2rem;
+        font-weight: 300; }
+        @media only screen and (max-width: 600px) {
+          .hotel-overview .hotel-info .hotel-info-left .hotel-title {
+            font-size: 2rem;
+            margin-right: 1rem; } }
+    .hotel-overview .hotel-info .hotel-info-right {
+      display: flex; }
+      @media only screen and (max-width: 700px) {
+        .hotel-overview .hotel-info .hotel-info-right {
+          padding: 0;
+          margin: 0; } }
+      .hotel-overview .hotel-info .hotel-info-right .hotel-location {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 4rem; }
+        .hotel-overview .hotel-info .hotel-info-right .hotel-location .locicon {
+          width: 2rem;
+          height: 2rem;
+          fill: #eb2f64;
+          margin-right: 2rem; }
+        .hotel-overview .hotel-info .hotel-info-right .hotel-location .hotel-location-name {
+          color: #ba265d;
+          font-weight: 400;
+          border-bottom: 1px solid #ba265d;
+          font-size: 1.4rem; }
+      .hotel-overview .hotel-info .hotel-info-right .hotel-score-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #eb2f64;
+        margin-right: 4rem;
+        padding: 1rem;
+        color: #f4f2f2; }
+        @media only screen and (max-width: 670px) {
+          .hotel-overview .hotel-info .hotel-info-right .hotel-score-div {
+            margin: 0;
+            padding: 1rem; } }
+        @media only screen and (max-width: 670px) {
+          .hotel-overview .hotel-info .hotel-info-right .hotel-score-div {
+            margin: 0;
+            padding: 0.5rem; } }
+        .hotel-overview .hotel-info .hotel-info-right .hotel-score-div .hotel-score {
+          font-size: 3rem;
+          font-weight: 300; }
+          @media only screen and (max-width: 670px) {
+            .hotel-overview .hotel-info .hotel-info-right .hotel-score-div .hotel-score {
+              font-size: 2rem; } }
+        .hotel-overview .hotel-info .hotel-info-right .hotel-score-div .hotel-votes {
+          margin-top: 1rem;
+          font-weight: 400; }
+
+.description {
+  font-size: 1.7rem;
+  padding-bottom: 0;
+  padding-top: 7%; }
+  @media only screen and (max-width: 1300px) {
+    .description {
+      font-size: 1.5rem; } }
+  @media only screen and (max-width: 750px) {
+    .description {
+      padding-top: 0%;
+      margin-right: 2rem; } }
+  .description .paragraph,
+  .description .desc-ul {
+    border-bottom: 1px solid #f0eeee;
+    line-height: 2rem;
+    margin: 2rem;
+    color: #777;
+    margin-bottom: 3rem;
+    padding-bottom: 1rem;
+    font-weight: 400;
+    font-size: 1.8rem; }
+    @media only screen and (max-width: 750px) {
+      .description .paragraph,
+      .description .desc-ul {
+        padding: 0;
+        margin: 1.5rem;
+        padding: 1rem; } }
+  .description .desc-ul {
+    display: flex;
+    flex-wrap: wrap; }
+    .description .desc-ul li {
+      flex: 0 0 50%;
+      padding: 1rem 0; }
+  .description .rec-users {
+    display: flex;
+    padding: 0 1%;
+    justify-content: space-around;
+    align-items: center; }
+    .description .rec-users .user-img {
+      height: 6rem;
+      border-radius: 50%; }
+      @media only screen and (max-width: 1300px) {
+        .description .rec-users .user-img {
+          height: 3rem; } }
+    .description .rec-users .user-img {
+      border: 3px solid white; }
+      .description .rec-users .user-img:not(:last-child) {
+        margin-right: -1.5rem; }
+    .description .rec-users .rec-user-text {
+      font-size: 1.7rem; }
+
+.user-reviews {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column; }
+  .user-reviews .quote {
+    opacity: 0.3; }
+    .user-reviews .quote .quote-svg {
+      transform: scaleX(-1);
+      width: 10rem;
+      height: 10rem;
+      position: absolute;
+      top: -3rem;
+      left: 0rem; }
+  .user-reviews .review {
+    position: relative;
+    margin: 0;
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 4rem 3rem;
+    color: black;
+    box-shadow: 0px 1rem 1.4rem rgba(0, 0, 0, 0.4); }
+    @media only screen and (max-width: 750px) {
+      .user-reviews .review {
+        padding: 2rem 1rem; } }
+  .user-reviews .review-text {
+    width: 100%;
+    margin: 0;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 600;
+    margin-top: 2rem; }
+    @media only screen and (max-width: 750px) {
+      .user-reviews .review-text {
+        margin-top: 1rem; } }
+  .user-reviews .review-user {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: space-between;
+    align-items: center; }
+    @media only screen and (max-width: 750px) {
+      .user-reviews .review-user {
+        flex: 1; } }
+    .user-reviews .review-user .review-img {
+      height: 8rem;
+      width: 8rem;
+      border-radius: 50%; }
+  .user-reviews .review-info {
+    display: flex;
+    align-items: center; }
+    .user-reviews .review-info .review-name {
+      margin-left: 1rem;
+      font-size: 1.8rem; }
+    .user-reviews .review-info .review-date {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      text-align: center; }
+  .user-reviews .review-score {
+    color: #eb2f64;
+    font-size: 3rem;
+    font-weight: 300; }
+
+.review-btn {
+  background: transparent;
+  color: #eb2f64;
+  font-size: 2rem;
+  border: 0;
+  border-bottom: 2px solid #eb2f64;
+  margin-top: 2rem;
+  padding: 0.5rem 2rem;
+  border-radius: 2px;
+  cursor: pointer; }
+  .review-btn:hover {
+    color: white;
+    background-color: #eb2f64; }
+
+.cta {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .cta-text {
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 4rem; }
+    @media only screen and (max-width: 700px) {
+      .cta-text {
+        font-size: 1.5rem; } }
+  .cta-btn {
+    background: linear-gradient(to right, #ff3366, #ba265d);
+    color: white;
+    position: relative;
+    padding: 3rem 15rem;
+    border-radius: 100px;
+    border: 0;
+    font-size: 2rem;
+    cursor: pointer; }
+    .cta-btn .cta-btn-1,
+    .cta-btn .cta-btn-2 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transition: all 0.3s;
+      transform: translate(-50%, -50%); }
+    .cta-btn .cta-btn-2 {
+      color: transparent;
+      top: 50%;
+      left: 17%;
+      transform: translate(-50%, -50%);
+      transform: translateY(-4rem); }
+    .cta-btn:hover .cta-btn-1 {
+      transform: translateY(-4rem);
+      color: transparent; }
+    .cta-btn:hover .cta-btn-2 {
+      transform: translateY(0);
+      color: white; }
