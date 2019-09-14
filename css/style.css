@@ -116,6 +116,9 @@ body {
     @media only screen and (max-width: 600px) {
       .header-search-div {
         order: 11; } }
+    @media only screen and (max-width: 600px) {
+      .header-search-div {
+        margin-left: 1rem; } }
     .header-search-div .header-search {
       width: 80%;
       height: 2rem;
